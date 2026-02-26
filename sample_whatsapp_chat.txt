@@ -1,0 +1,10 @@
+25/12/2024, 10:30 - +2348123456789: Hello, I'm interested in your product
+25/12/2024, 10:31 - John Doe: Great! What would you like to know?
+25/12/2024, 10:32 - +2347098765432: Can you send me the price list?
+25/12/2024, 10:35 - +2349012345678: Hello, when do you deliver?
+25/12/2024, 11:00 - Mary Smith: I received my order, thank you!
+25/12/2024, 11:15 - +2348111111111: Do you have WhatsApp Business?
+25/12/2024, 11:20 - +2347222222222: I want to make a bulk order
+25/12/2024, 14:30 - +2349033333333: Please call me back
+25/12/2024, 15:45 - Peter Johnson: Confirming my payment
+25/12/2024, 16:00 - +2348144444444: Location please?
