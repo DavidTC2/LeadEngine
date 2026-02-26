@@ -1,22 +1,33 @@
 {
   "expo": {
-    "name": "frontend",
-    "slug": "frontend",
+    "name": "WhatsApp Lead Manager",
+    "slug": "whatsapp-lead-manager",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "frontend",
+    "scheme": "leadmanager",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.leadmanager.app",
+      "infoPlist": {
+        "NSContactsUsageDescription": "Save WhatsApp leads to contacts",
+        "NSPhotoLibraryUsageDescription": "Access files for import"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#000"
+        "backgroundColor": "#2563eb"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.leadmanager.app",
+      "permissions": [
+        "READ_CONTACTS",
+        "WRITE_CONTACTS",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -31,12 +42,25 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#000"
+          "backgroundColor": "#2563eb"
         }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Save WhatsApp leads to contacts"
+        }
+      ],
+      [
+        "expo-document-picker",
+        {}
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "EXPO_PUBLIC_BACKEND_URL": "https://lead-capture-pro-11.preview.emergentagent.com"
     }
   }
 }
