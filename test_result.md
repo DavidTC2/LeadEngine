@@ -170,15 +170,18 @@ backend:
 
   - task: "Export VCF API"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         - working: "NA"
           agent: "main"
           comment: "POST /api/leads/export-vcf - Generates VCF content and returns base64 encoded. Not yet tested with actual data."
+        - working: true
+          agent: "testing"
+          comment: "POST /api/leads/export-vcf - Tested successfully. API generates proper VCF format with BEGIN:VCARD, END:VCARD, FN:, and TEL; fields. Base64 encoding/decoding works correctly. Generated 2 vCards as expected."
 
   - task: "Lead Stats API"
     implemented: true
