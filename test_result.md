@@ -155,15 +155,18 @@ backend:
 
   - task: "Bulk Save Leads API"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         - working: "NA"
           agent: "main"
           comment: "POST /api/leads/bulk-save - Updates lead is_saved status. Not yet tested with actual data."
+        - working: true
+          agent: "testing"
+          comment: "POST /api/leads/bulk-save - Tested successfully. API correctly updates lead is_saved status and returns accurate updated_count. Works as expected."
 
   - task: "Export VCF API"
     implemented: true
