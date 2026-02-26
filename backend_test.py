@@ -342,7 +342,7 @@ class BackendTester:
                             if ("BEGIN:VCARD" in vcf_content and 
                                 "END:VCARD" in vcf_content and
                                 "FN:" in vcf_content and 
-                                "TEL:" in vcf_content):
+                                ("TEL:" in vcf_content or "TEL;" in vcf_content)):
                                 # Count vCards
                                 vcard_count = vcf_content.count("BEGIN:VCARD")
                                 if vcard_count == 2:
